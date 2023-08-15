@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/05/28 10:46:26.934.pas,C:\Users\kayisha.naidoo\Documents\RAD Studio\Projects\Unit1.pas=I:\Subjects\IT\PAT\Programme\AviationTrackers_u.pas</Transaction>
+    <Transaction>2021/05/28 10:46:26.934.dfm,C:\Users\kayisha.naidoo\Documents\RAD Studio\Projects\Unit1.dfm=I:\Subjects\IT\PAT\Programme\AviationTrackers_u.dfm</Transaction>
+    <Transaction>2021/05/28 10:46:35.771.dproj,C:\Users\kayisha.naidoo\Documents\RAD Studio\Projects\Project1.dproj=I:\Subjects\IT\PAT\Programme\AviationTrackers_p.dproj</Transaction>
+    <Transaction>2021/05/28 12:37:47.160.pas,I:\Subjects\IT\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\MainForm_u.pas</Transaction>
+    <Transaction>2021/05/28 12:37:47.160.dfm,I:\Subjects\IT\PAT\Programme\Unit1.dfm=I:\Subjects\IT\PAT\Programme\MainForm_u.dfm</Transaction>
+    <Transaction>2021/05/28 17:23:36.664.pas,I:\Subjects\IT\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\ImportExport_dm.pas</Transaction>
+    <Transaction>2021/05/28 17:23:36.664.dfm,I:\Subjects\IT\PAT\Programme\Unit1.dfm=I:\Subjects\IT\PAT\Programme\ImportExport_dm.dfm</Transaction>
+    <Transaction>2021/05/28 17:25:13.493.pas,I:\Subjects\IT\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\StatusCheck_u.pas</Transaction>
+    <Transaction>2021/05/28 17:25:13.493.dfm,I:\Subjects\IT\PAT\Programme\Unit1.dfm=I:\Subjects\IT\PAT\Programme\StatusCheck_u.dfm</Transaction>
+    <Transaction>2021/05/28 21:55:24.086.pas,I:\Subjects\IT\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\Load_u.pas</Transaction>
+    <Transaction>2021/05/29 22:24:25.895.pas,I:\Subjects\IT\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\CurrencyConvertor_u.pas</Transaction>
+    <Transaction>2021/05/29 22:24:25.897.dfm,I:\Subjects\IT\PAT\Programme\Unit1.dfm=I:\Subjects\IT\PAT\Programme\CurrencyConvertor_u.dfm</Transaction>
+    <Transaction>2021/05/29 23:05:26.356.pas,I:\Subjects\IT\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\clsConvertor.pas</Transaction>
+    <Transaction>2021/05/29 23:05:46.282.pas,I:\Subjects\IT\PAT\Programme\clsConvertor.pas=I:\Subjects\IT\PAT\Programme\clsConvertor_u.pas</Transaction>
+    <Transaction>2021/05/29 23:06:04.190.pas,I:\Subjects\IT\PAT\Programme\AviationTrackers_u.pas=I:\Subjects\IT\PAT\Programme\Loading_u.pas</Transaction>
+    <Transaction>2021/05/29 23:06:04.190.dfm,I:\Subjects\IT\PAT\Programme\AviationTrackers_u.dfm=I:\Subjects\IT\PAT\Programme\Loading_u.dfm</Transaction>
+    <Transaction>2021/05/30 20:40:26.030.pas,I:\Subjects\IT\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\TradeValues_u.pas</Transaction>
+    <Transaction>2021/05/30 20:40:26.030.dfm,I:\Subjects\IT\PAT\Programme\Unit1.dfm=I:\Subjects\IT\PAT\Programme\TradeValues_u.dfm</Transaction>
+    <Transaction>2021/05/31 17:15:39.250.pas,I:\Subjects\IT\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\clsReadTextFile_u.pas</Transaction>
+    <Transaction>2021/06/01 11:07:35.185.pas,I:\Subjects\IT\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\clsCheckstatus_u.pas</Transaction>
+    <Transaction>2021/06/01 12:31:13.979.pas,I:\Subjects\IT\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\clsTradeValues_u.pas</Transaction>
+    <Transaction>2021/06/09 18:22:35.146.pas,I:\Subjects\IT\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\AdminLogin_u.pas</Transaction>
+    <Transaction>2021/06/09 18:22:35.146.dfm,I:\Subjects\IT\PAT\Programme\Unit1.dfm=I:\Subjects\IT\PAT\Programme\AdminLogin_u.dfm</Transaction>
+    <Transaction>2021/06/16 16:36:22.902.pas,I:\Subjects\IT\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\AdminInterface_u.pas</Transaction>
+    <Transaction>2021/06/16 16:36:22.903.dfm,I:\Subjects\IT\PAT\Programme\Unit1.dfm=I:\Subjects\IT\PAT\Programme\AdminInterface_u.dfm</Transaction>
+    <Transaction>2021/06/25 14:10:54.495.pas,I:\Subjects\IT\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\clsNewCommodity_u.pas</Transaction>
+    <Transaction>2021/08/24 11:07:16.916.pas,I:\Subjects\IT\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\Feedback_u.pas</Transaction>
+    <Transaction>2021/08/24 11:07:16.917.dfm,I:\Subjects\IT\PAT\Programme\Unit1.dfm=I:\Subjects\IT\PAT\Programme\Feedback_u.dfm</Transaction>
+    <Transaction>2021/08/26 22:15:42.276.pas,I:\Subjects\IT\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\HelpImportExport_u.pas</Transaction>
+    <Transaction>2021/08/26 22:15:42.276.dfm,I:\Subjects\IT\PAT\Programme\Unit1.dfm=I:\Subjects\IT\PAT\Programme\HelpImportExport_u.dfm</Transaction>
+    <Transaction>2021/08/27 13:47:45.861.pas,I:\Subjects\IT\PAT\Programme\PAT\Programme\HelpImportExport_u.pas=</Transaction>
+    <Transaction>2021/08/27 13:47:45.873.dfm,I:\Subjects\IT\PAT\Programme\PAT\Programme\HelpImportExport_u.dfm=</Transaction>
+    <Transaction>2021/08/27 13:50:02.130.pas,I:\Subjects\IT\PAT\Programme\PAT\Programme\Unit1.pas=I:\Subjects\IT\PAT\Programme\PAT\Programme\HelpVideo_u.pas</Transaction>
+    <Transaction>2021/08/27 13:50:02.130.dfm,I:\Subjects\IT\PAT\Programme\PAT\Programme\Unit1.dfm=I:\Subjects\IT\PAT\Programme\PAT\Programme\HelpVideo_u.dfm</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="AdminInterface_u.pas"/>
+    <File Path="AdminInterface_u.dfm"/>
+    <File Path="AdminLogin_u.pas"/>
+    <File Path="AdminLogin_u.dfm"/>
+    <File Path="Feedback_u.pas"/>
+    <File Path="Feedback_u.dfm"/>
+    <File Path="clsConvertor_u.pas"/>
+    <File Path="clsNewCommodity_u.pas"/>
+    <File Path="clsTradeValues_u.pas"/>
+    <File Path="clsCheckstatus_u.pas"/>
+    <File Path="CurrencyConvertor_u.pas"/>
+    <File Path="CurrencyConvertor_u.dfm"/>
+    <File Path="ImportExport_dm.pas"/>
+    <File Path="ImportExport_dm.dfm"/>
+    <File Path="MainForm_u.pas"/>
+    <File Path="MainForm_u.dfm"/>
+    <File Path="StatusCheck_u.pas"/>
+    <File Path="StatusCheck_u.dfm"/>
+    <File Path="TradeValues_u.pas"/>
+    <File Path="TradeValues_u.dfm"/>
+    <File Path="HelpVideo_u.pas"/>
+    <File Path="HelpVideo_u.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

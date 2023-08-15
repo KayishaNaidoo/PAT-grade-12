@@ -1,0 +1,153 @@
+unit MainForm_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Buttons, jpeg, ExtCtrls, XPMan, ComCtrls,
+  StatusCheck_u, CurrencyConvertor_u, TradeValues_u, ImportExport_dm;
+
+type
+  TfrmMainForm = class(TForm)
+    imgLogo: TImage;
+    lblAboutUs: TLabel;
+    btnCheckStatus: TButton;
+    btnCurrencyConvertor: TButton;
+    btnTradeValue: TButton;
+    XPManifest1: TXPManifest;
+    pnlAboutUs: TPanel;
+    btnBack: TButton;
+    redAboutUs: TRichEdit;
+    pnlStatusCheck: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
+    edtTrackingID: TEdit;
+    edtClientID: TEdit;
+    btnEnterSC: TButton;
+    btnBackSC: TButton;
+    BitBtn1: TBitBtn;
+    lblContact: TLabel;
+    procedure lblAboutUsClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure btnBackClick(Sender: TObject);
+    procedure btnCheckStatusClick(Sender: TObject);
+    procedure btnEnterSCClick(Sender: TObject);
+    procedure btnBackSCClick(Sender: TObject);
+    procedure btnCurrencyConvertorClick(Sender: TObject);
+    procedure btnTradeValueClick(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+  private
+  tAboutUs: TextFile;
+
+  public
+    sAboutUs, sTrackingID, sCLientID: String;
+    bClient: Boolean;
+  end;
+
+var
+  frmMainForm: TfrmMainForm;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmMainForm.lblAboutUsClick(Sender: TObject);
+begin
+  redAboutUs.Clear;
+  redAboutUs.Lines.Add(sAboutUs);
+  pnlAboutUs.Show;
+  lblAboutUs.Hide;
+end;
+
+procedure TfrmMainForm.btnBackSCClick(Sender: TObject);
+begin
+  pnlStatusCheck.Hide;
+  lblAboutUs.Show;
+  lblContact.Show;
+
+end;
+
+procedure TfrmMainForm.btnCheckStatusClick(Sender: TObject);
+begin
+  pnlStatusCheck.Show;
+  edtTrackingId.SetFocus;
+  lblAboutUs.Hide;
+  lblContact.Hide;
+end;
+
+procedure TfrmMainForm.btnCurrencyConvertorClick(Sender: TObject);
+begin
+  frmCurrencyConvertor.Show;
+  frmMainForm.Hide;
+end;
+
+procedure TfrmMainForm.btnEnterSCClick(Sender: TObject);
+var
+  bFound: Boolean;
+begin
+  sTrackingID:= edtTrackingID.Text;
+  sClientID:= edtClientID.Text;
+
+  with dmImportExport do
+  begin
+    bFound:= False;
+    tblLink.First;
+    while (NOT tblLink.EOF) AND (bFound=False) do
+    begin
+      if (StrToInt(sTrackingID) = tblLink['TrackingID']) AND  (StrToInt(sClientID) = tblLink['ClientID'])  then
+      begin
+        bFound:= True;
+        frmMainForm.Hide;
+        pnlStatusCheck.Hide;
+        frmStatusCheck.Show;
+      end//end of if statement
+        else
+          tblLink.Next;
+    end;//end of while statement
+    if bFound=False then
+      Showmessage('Invalid TrackingID or ClientID. Please Re-enter.');
+      edtTrackingId.Clear;
+      edtClientId.Clear;
+  end;//end of with statement
+
+end;
+
+procedure TfrmMainForm.btnTradeValueClick(Sender: TObject);
+begin
+  frmTradeValues.Show;
+  frmMainform.Hide;
+end;
+
+procedure TfrmMainForm.FormActivate(Sender: TObject);
+begin
+  lblContact.Show;
+  lblaboutUs.Show;
+end;
+
+procedure TfrmMainForm.FormCreate(Sender: TObject);
+var
+  sLine: String;
+begin
+  pnlAboutUs.Hide;
+  pnlStatusCheck.Hide;
+  AssignFile(tAboutUs, 'AboutUs.txt');
+   Try
+    RESET(tAboutUs);
+   Except
+    Showmessage('Error finding Program file.');
+    EXIT;
+   end;
+     while NOT EOF(tAboutUs) do
+     begin
+      ReadLn(tAboutUs,sLine);
+      sAboutUs:= sAboutUs + sLine;
+     end;
+end;
+
+procedure TfrmMainForm.btnBackClick(Sender: TObject);
+begin
+  pnlAboutUs.Hide;
+  lblAboutUs.Show;
+end;
+
+end.

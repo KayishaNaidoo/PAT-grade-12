@@ -1,0 +1,4 @@
+Instructions for use:
+1. Enter the value you wish to convert in the First Edit Box.
+2. Choose the Currency you wish to convert it into/from. (This will be currencies in the drop down menu).
+3. The converted value will be displayed in the appropriate Edit Box.

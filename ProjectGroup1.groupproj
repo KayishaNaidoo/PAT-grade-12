@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{CE7AD9B2-B4FC-4E90-BDD1-E5851F5144C0}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="AviationTrackers_p.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="C:\Users\kayisha.naidoo\WindowsMedia.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="AviationTrackers_p">
+			<MSBuild Projects="AviationTrackers_p.dproj"/>
+		</Target>
+		<Target Name="AviationTrackers_p:Clean">
+			<MSBuild Targets="Clean" Projects="AviationTrackers_p.dproj"/>
+		</Target>
+		<Target Name="AviationTrackers_p:Make">
+			<MSBuild Targets="Make" Projects="AviationTrackers_p.dproj"/>
+		</Target>
+		<Target Name="WindowsMedia">
+			<MSBuild Projects="C:\Users\kayisha.naidoo\WindowsMedia.dproj"/>
+		</Target>
+		<Target Name="WindowsMedia:Clean">
+			<MSBuild Targets="Clean" Projects="C:\Users\kayisha.naidoo\WindowsMedia.dproj"/>
+		</Target>
+		<Target Name="WindowsMedia:Make">
+			<MSBuild Targets="Make" Projects="C:\Users\kayisha.naidoo\WindowsMedia.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="AviationTrackers_p;WindowsMedia"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="AviationTrackers_p:Clean;WindowsMedia:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="AviationTrackers_p:Make;WindowsMedia:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

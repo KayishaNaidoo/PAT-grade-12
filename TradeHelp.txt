@@ -1,0 +1,7 @@
+What is this feature about?
+
+ 1. Aviation tracker aims to improve the Trade stability of South Africa by allowing people to see the value of imports vs exports, whilst ensuring client privacy.
+
+ 2. This feature is supported to allow transparency of Trade conditions in South Africa. 
+
+ 3. Please note that Aviation Tracker is a privately owned non-profit organisation and is therefore not subject to any manipulations of values. All displayed data is directly extracted from our databases.

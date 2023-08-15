@@ -1,0 +1,14 @@
+program AviationTrackers_p;
+
+uses
+  Forms,
+  AviationTrackers_u in 'AviationTrackers_u.pas' {frmWelcomePage};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmWelcomePage, frmWelcomePage);
+  Application.Run;
+end.

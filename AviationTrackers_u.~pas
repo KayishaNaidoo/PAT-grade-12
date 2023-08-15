@@ -1,0 +1,45 @@
+unit AviationTrackers_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, StdCtrls, ComCtrls,MainForm_u, jpeg;
+
+type
+  TfrmWelcomePage = class(TForm)
+    ProgressBar: TProgressBar;
+    imgLogo: TImage;
+    lblWelcome: TLabel;
+    Timer: TTimer;
+    procedure FormCreate(Sender: TObject);
+    procedure TimerTimer(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmWelcomePage: TfrmWelcomePage;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmWelcomePage.FormCreate(Sender: TObject);
+begin
+  Timer.Enabled:= true;
+end;
+
+procedure TfrmWelcomePage.TimerTimer(Sender: TObject);
+begin
+ProgressBar.Position:= ProgressBar.Position + 1;
+ if ProgressBar.Position= 100 then
+  begin
+    frmWelcomePage.Hide;
+    frmMainForm.Show;
+  end;
+end;
+
+end.
